@@ -1,0 +1,26 @@
+package happ
+
+const (
+	ErrEmptyPath            = "path cannot be empty"
+	ErrFileRead             = "failed to read file"
+	ErrFileEmpty            = "file is empty"
+	ErrPEMDecode            = "failed to decode PEM"
+	ErrPEMNil               = "PEM block is nil"
+	ErrPrivateKeyNotRSA     = "private key is not an RSA private key"
+	ErrPublicKeyNotRSA      = "public key is not an RSA private key"
+	ErrPrivateKeyParse      = "private key parse error"
+	ErrPrivateKeyNil        = "private key is nil"
+	ErrPublicKeyParse       = "public key parse error"
+	ErrPublicKeyNil         = "public key is nil"
+	ErrEmptyData            = "data is empty"
+	ErrEmptyVersion         = "version cannot be empty"
+	ErrDecryptEmptyLink     = "empty link"
+	ErrDecryptBadData       = "none of the keys could decrypt the data"
+	ErrWrongVersion         = "public key for version %s not found"
+	ErrWrongKeyForVersion   = "public key for version %s is invalid (nil)"
+	ErrInvalidLinkFormat    = "invalid link format"
+	ErrEncryptedDataIsEmpty = "encrypted data is empty"
+	ErrB64Decode            = "base64 decode fails: %v"
+	ErrRSADecode            = "RSA decode fails: %v"
+	ErrLargeData            = "data too large"
+)
