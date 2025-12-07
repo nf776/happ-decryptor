@@ -1,3 +1,13 @@
+## ⚠️ Important Legal & Security Notice
+
+This module is designed for **authorized use only**. It operates under the assumption that you, the user, have **legally obtained** the necessary private keys or access credentials directly from the official developers or service administrators.
+
+*   **We do not possess, provide, or assist in obtaining any private keys, credentials, or access tokens.**
+*   **Attempting to acquire such keys without explicit authorization from the rightful owners is likely illegal** and constitutes a violation of computer fraud and abuse laws, terms of service, and copyright.
+*   This project is intended solely for developers and users who have been **explicitly granted access** by the official source.
+
+The maintainers of this repository are not responsible for any misuse, legal repercussions, or damages resulting from unauthorized use of this software.
+
 # Happ Encryption/Decryption Module
 
 A Go module for encrypting and decrypting Happ links using RSA encryption with PKCS1v15 padding.
