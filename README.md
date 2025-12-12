@@ -22,7 +22,7 @@ A Go module for encrypting and decrypting Happ links using RSA encryption with P
 ## Installation
 
 ```bash
-go get github.com/nf776/happ-decryptor@v1.0.0
+go get github.com/nf776/happ-decryptor@v1.0.1
 ```
 
 ## Usage
