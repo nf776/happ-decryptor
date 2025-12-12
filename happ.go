@@ -196,7 +196,7 @@ func parseLink(link string) (string, string, error) {
 		return "", "", errors.New(ErrDecryptEmptyLink)
 	}
 
-	re := regexp.MustCompile(`happ://(crypt|crypt2|crypt3)/(.+)`)
+	re := regexp.MustCompile(`happ://(crypt|crypt2|crypt3|crypt4)/(.+)`)
 	matches := re.FindStringSubmatch(link)
 	if matches == nil {
 		return "", "", errors.New(ErrInvalidLinkFormat)
