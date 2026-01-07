@@ -15,7 +15,7 @@ A Go module for encrypting and decrypting Happ links using RSA encryption with P
 ## Features
 
  - 🔐 RSA encryption/decryption with PKCS1v15 padding
- - 🔗 All Happ link format support (`happ://crypt/...`, `happ://crypt2/...`, `happ://crypt3/...`)
+ - 🔗 All Happ link format support
  - 🗝️ Multiple key version support
  - 🛡️ Comprehensive error handling
 
@@ -42,12 +42,14 @@ func main() {
         "crypt":  "keys/private_crypt.pem",
         "crypt2": "keys/private_crypt2.pem",
         "crypt3": "keys/private_crypt3.pem",
+        "crypt4": "keys/private_crypt4.pem",
     }
 
     publicKeys := map[string]string {
         "crypt":  "keys/public_crypt.pem",
         "crypt2": "keys/public_crypt2.pem",
         "crypt3": "keys/public_crypt3.pem",
+        "crypt4": "keys/public_crypt4.pem",
     }
 
     // Initialize processor with key paths
@@ -77,7 +79,7 @@ func main() {
 ## Key Requirements
  - Private Keys: For decryption (keys from app)
  - Public Keys: For encryption (PKCS8 PEM format)
- - Key Versions: Support for crypt, crypt2, crypt3 versions
+ - Key Versions: Support for crypt, crypt2, crypt3, crypt4 versions
 
 ## Error Handling
 
@@ -99,5 +101,5 @@ if err != nil {
 ## Smart Decryption
 
  - Automatically tries multiple key versions if the specified one fails
- - Fallback order: specified version → crypt → crypt2 → crypt3
+ - Fallback order: specified version → crypt → crypt2 → crypt3 → crypt4
  - Returns the actual key used for decryption
